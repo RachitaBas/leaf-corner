@@ -1,0 +1,264 @@
+body{
+	background-image:url(../images/pizza.jpeg);
+	background-size: 100% ;
+	font-family: 'Times New Roman', serif;
+	overflow: hidden;
+}
+
+.Section{
+	display: none;
+}
+
+.home{
+	padding-left: 350px;
+
+}
+
+.div_1{
+	width:99%;
+	justify-content: center;
+	height: 625px;
+	background-image: url(../images/restro2.jpg);
+	background-size: 100%;
+	background-position: left center;
+	background-repeat: no-repeat;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius:50px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	top: 0px;
+	left: 10px;
+	right: 10px;
+	display: none;
+	opacity: 0.9;
+}
+
+.div_1 .btn_1{
+	margin-top:150px;
+	width:300px;
+	height: 60px;
+	border-radius: 50px;
+	font-size: 33px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background:linear-gradient(120deg,#000066,black,#003399) ;
+	background-size:300% ;
+	color: orange;
+	border: 1px solid black;
+	display:none;
+}
+
+.div_1 .btn_1:hover{
+	background-position: right;
+	cursor: pointer;
+}
+
+h1{
+	color:orange;
+}
+
+.Box{
+	width: 900px;
+	height: 400px;
+	padding-left: 25%;
+	top: 200px;
+	left: 200px;
+	opacity: 0.8;
+	display: none;
+}
+
+.Box .text{
+	width: 350px;
+	height: 350px;
+	font-size: 30px;
+	color:white;
+	background-color:black;
+	float: left;
+	display: block;
+	padding-left: 20px;
+	color: orange;
+	font-weight: lighter;
+	text-shadow: 0.5px 0.5px #fdfefe;
+	border-radius: 15px 0px 0px 15px;
+	border: 2px solid orange;
+	border-right: none;
+} 
+
+.Box .image{
+	width: 400px;
+	height: 350px;
+	background-image: url(../images/sandwich.jpg);
+	background-size: cover;
+	background-position: left center;
+	float: left;
+	border-radius: 0px 15px 15px 0px ;
+	border: 2px solid orange;
+	border-left: none;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.btn{
+	padding: 12px 30px;
+	border-radius: 12px;
+	background-color: orange;
+	border: 1px solid black;
+	color: black;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+	cursor:pointer;
+	margin-top: 40px;
+	font-size:22px;
+	width:200px;
+	opacity: 0.85;
+}
+
+.btn:hover{
+	opacity: 1;
+	border: 1.5px solid black;
+}
+
+.food{
+	text-align:center;
+	font-size: 50px;
+	text-shadow: 3px 3px black;
+}
+
+.wrapper{
+	text-align: center;
+	font-size: 55px;
+	font-weight: 1000;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background: linear-gradient(to right, red 10% ,orange 60%);
+	padding-top: 180px;
+	display: none;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 6s linear infinite;
+	display: none;
+	text-shadow: 2px 2px 5px black;
+}
+
+@keyframes textclip{
+	to {
+		background-position: 200% center;
+	}
+}
+
+/*----------------FOOTER----------------*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: #968282;
+    opacity: 75%; 
+  }
+  
+/*
+
+  *{
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+  }
+
+  body{
+	  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .wrapper{
+	  width: 1200px;
+	  margin:100px auto;
+  }
+
+.title{
+	  text-align: center;
+	  margin-bottom: 60px;
+}
+
+.title h4{
+	text-transform: capitalize;
+	font-size: 36px;
+	position: relative;
+	display: inline-block;
+
+}
+
+.title h4 span{
+	display: block;
+	font-size: 10px;
+	font-style: italic;
+	margin-bottom: -10px;
+}
+
+.title h4::before{
+	position: absolute;
+	content: "";
+	width: 100px;
+	height: 2px;
+	background-color: red;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+*/
+
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.single-menu{
+	flex-basis: 580px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+	border-bottom: 0;
+}
+
+.single-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.single-menu:hover img{
+	border-radius: 0;
+}
+.single-menu img{
+	max-width: 180px;
+	margin-right: 30px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	padding: 3px;
+	transition: 5s;
+}
+
+.single-menu h4{
+	text-transform: capitalize;
+	font-size: 22px;
+	border-bottom: 1px dashed #333;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.single-menu h4 span{
+	float: right;
+	color: #ff7720;
+	font-style: italic;
+}

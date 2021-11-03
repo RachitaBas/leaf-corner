@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>reservation form</title>
+        <link rel="stylesheet" href="css/reservation.css">
+        
+    </head>
+    <body>
+        
+        <section class="banner">
+            <a class="navbar-brand" href="#">
+                <img src="images/leaf-corner.png"  width=70px height=70px alt="logo"></img>
+            </a>
+            <h2>Book your table now</h2>
+            <script src="https://kit.fontawesome.com/200a2b71c4.js" crossorigin="anonymous"></script>
+            <a href="index.html" class="home">
+                <a href="index.html"><i class="fa fa-home"></i>HOME</a>
+            </a>
+            <div class="card-container">
+                <div class="card-img">
+                    <!--image here-->
+                </div>
+
+                <div class="card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class="form-row">
+                            <select name="days">
+                                <option value="day-select">Select Day</option>
+                                <option value="sunday">Sunday</option>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thrusday">Thrusday</option>
+                                <option value="friday">Friday</option>
+                                <option value="saturday">Saturday</option>
+                            </select>
+                            <select name="hours">
+                                <option value="hours-select">Select Hour</option>
+                                <option value="10">10:00</option>
+                                <option value="11">11:00</option>
+                                <option value="12">12:00</option>
+                                <option value="1">1:00</option>
+                                <option value="2">2:00</option>
+                                <option value="3">3:00</option>
+                                <option value="4">4:00</option>
+                                <option value="5">5:00</option>
+                                <option value="6">6:00</option>
+                                <option value="7">7:00</option>
+                                <option value="8">8:00</option>
+                                <option value="9">9:00</option>
+                                <option value="10">10:00</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-row">
+                            <input type="text" placeholder="Full Name">
+                            <input type="text" placeholder="Phone Number">
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="How many persons?" min="1">
+                            <input type="submit" value="BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!----START OF FOOTER----->
+
+      <footer>
+           Copyright 2020 &copy;Leafcorner.All rights reserved.
+     </footer> 
+     
+<!--END OF FOOTER-->
+    </body>
+</html>
